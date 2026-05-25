@@ -32,7 +32,7 @@
         rgba(0,0,0,.72),
         rgba(0,0,0,.72)
       ),
-      url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2070&auto=format&fit=crop") center center/cover no-repeat;
+      url("./bg.jpg?v=2") center center/cover no-repeat;
 
       transform:scale(1.05);
       animation:bgMove 18s ease-in-out infinite alternate;
@@ -289,7 +289,7 @@
 <body>
 
   <!-- 背景 -->
-  <div class="bg"></div>
+  <div class=""bg.jpg""></div>
 
   <!-- 顶部 -->
   <div class="navbar">
@@ -371,38 +371,38 @@
 
   </div>
 
- <script>
+  <script>
 
-  // 开始面试
-  function startInterview(){
+    // 开始面试
+    function startInterview(){
 
-    // 按钮加载状态
-    const btn = document.querySelector(".start-btn");
+      // 按钮加载状态
+      const btn = document.querySelector(".start-btn");
 
-    btn.innerHTML = "正在进入...";
-    btn.style.opacity = "0.85";
-    btn.style.pointerEvents = "none";
+      btn.innerHTML = "正在进入...";
+      btn.style.opacity = "0.85";
+      btn.style.pointerEvents = "none";
 
-    // 你的 Coze 智能体公开链接
-    const interviewUrl =
-    "https://www.coze.cn/s/mGH8vrIQmSk/";
+      // 你的 Coze 智能体公开链接
+      const interviewUrl =
+      "https://www.coze.cn/s/mGH8vrIQmSk/";
 
-    // 延迟跳转（更有高级感）
-    setTimeout(()=>{
+      // 延迟跳转
+      setTimeout(()=>{
 
-      // 新窗口打开
-      window.open(interviewUrl, "_blank");
+        // 新窗口打开
+        window.open(interviewUrl, "_blank");
 
-      // 恢复按钮
-      btn.innerHTML = "开始面试";
-      btn.style.opacity = "1";
-      btn.style.pointerEvents = "auto";
+        // 恢复按钮
+        btn.innerHTML = "开始面试";
+        btn.style.opacity = "1";
+        btn.style.pointerEvents = "auto";
 
-    },1200);
+      },1200);
 
-  }
+    }
 
-</script>
+  </script>
 
 </body>
 </html>
