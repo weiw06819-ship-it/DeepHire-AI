@@ -32,7 +32,7 @@
         rgba(0,0,0,.72),
         rgba(0,0,0,.72)
       ),
-      url("./bg.jpg?v=2") center center/cover no-repeat;
+      url("./bg.jpg?v=999") center center/cover no-repeat;
 
       transform:scale(1.05);
       animation:bgMove 18s ease-in-out infinite alternate;
@@ -371,38 +371,32 @@
 
   </div>
 
-  <script>
+<script>
 
-    // 开始面试
-    function startInterview(){
+function startInterview(){
 
-      // 按钮加载状态
-      const btn = document.querySelector(".start-btn");
+  const btn = document.querySelector(".start-btn");
 
-      btn.innerHTML = "正在进入...";
-      btn.style.opacity = "0.85";
-      btn.style.pointerEvents = "none";
+  btn.innerHTML = "正在进入...";
+  btn.style.opacity = "0.85";
+  btn.style.pointerEvents = "none";
 
-      // 你的 Coze 智能体公开链接
-      const interviewUrl =
-      "https://www.coze.cn/s/mGH8vrIQmSk/";
+  // 新智能体链接
+  const interviewUrl =
+  "https://www.coze.cn/store/agent/7643668704886636598?bot_id=true";
 
-      // 延迟跳转
-      setTimeout(()=>{
+  setTimeout(()=>{
 
-        // 新窗口打开
-        window.open(interviewUrl, "_blank");
+    // 跳转新智能体
+    window.open(interviewUrl, "_blank");
 
-        // 恢复按钮
-        btn.innerHTML = "开始面试";
-        btn.style.opacity = "1";
-        btn.style.pointerEvents = "auto";
+    btn.innerHTML = "开始面试";
+    btn.style.opacity = "1";
+    btn.style.pointerEvents = "auto";
 
-      },1200);
+  },800);
+}
 
-    }
-
-  </script>
-
+</script>
 </body>
 </html>
